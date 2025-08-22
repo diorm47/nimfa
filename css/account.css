@@ -1,0 +1,59 @@
+.account_page {
+  display: flex;
+  align-items: start;
+}
+
+.account_menu_list {
+  border-right: var(--border);
+  min-height: 100vh;
+  width: 14.05%;
+  padding: 80px 0 0 40px;
+}
+.account_menu_content {
+  width: 85.95%;
+}
+
+.account_menu_item {
+  margin-bottom: 14px;
+}
+.account_menu_item p {
+  color: var(--color-charcoal-black);
+  font: inherit;
+  font-weight: 400;
+  font-size: 18px;
+  opacity: 0.6;
+  margin-bottom: 14px;
+}
+
+.active_account_menu_item p {
+  opacity: 1;
+  padding-left: 8px;
+  border-left: 2px solid var(--color-charcoal-black);
+}
+
+.account_page_block {
+  padding: 80px 0 80px 98px;
+  border-bottom: var(--border);
+}
+
+.description h4 {
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.account_page_block .title,
+.account_page_block .subtitle {
+  margin-bottom: 40px;
+}
+.account_page_item .account_page_block:last-child {
+  border-bottom: none;
+}
+
+.account_btn {
+  height: 44px;
+  font-size: 20px;
+  margin-top: 20px;
+  width: auto;
+  display: inline-block;
+  padding: 10px 80px;
+}

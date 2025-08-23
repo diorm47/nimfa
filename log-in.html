@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Login</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/login.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__inner container">
+        <a class="header__logo logo" href="/">
+          <img
+            class="logo__image"
+            src="./images/logo.svg"
+            width="92"
+            height="25"
+            alt=""
+          />
+        </a>
+        <nav class="header__menu" aria-label="Main Navigation">
+          <ul class="header__menu-list">
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="/">Shop all</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="/">About</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="/">Contacts</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="/">Blog</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="header__actions">
+          <li class="header__actions-item">
+            <button class="header__actions-control" type="button">
+              Search
+            </button>
+          </li>
+          <li class="header__actions-item">
+            <a
+              class="header__actions-control header__actions-control--account"
+              href="/"
+              >Account</a
+            >
+          </li>
+          <li class="header__actions-item">
+            <button class="header__actions-control" type="button">
+              Cart(0)
+            </button>
+          </li>
+        </ul>
+        <button class="header__burger-button burger-button" type="button">
+          <span class="burger-button__line"></span>
+          <span class="burger-button__line"></span>
+        </button>
+      </div>
+    </header>
+    <main class="main container-fluid">
+      <section class="login_auth-page">
+        <div class="image_block">
+          <img src="./images/empty-img.png" alt="" />
+        </div>
+        <div class="login_form">
+          <div class="login_form-wrapper">
+            <h2 class="login__title subtitle">Log In</h2>
+            <div class="login_form-inputs">
+              <input class="field" type="email" placeholder="Email address" />
+              <input class="field" type="password" placeholder="Password" />
+            </div>
+            <a class="forgot-pass__link-line link-line" href="/"
+              >Lost your password?</a
+            >
+            <a class="account_btn button" href="/">Log in</a>
+            <a class="link-line" href="./sign-up.html">Don't have an account? Create one</a>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

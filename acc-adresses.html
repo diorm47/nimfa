@@ -13,7 +13,13 @@
     <header class="header">
       <div class="header__inner container">
         <a class="header__logo logo" href="/">
-          <img class="logo__image" src="./images/logo.svg" alt="" />
+          <img
+            class="logo__image"
+            src="./images/logo.svg"
+            width="92"
+            height="25"
+            alt=""
+          />
         </a>
         <nav class="header__menu" aria-label="Main Navigation">
           <ul class="header__menu-list">
@@ -38,7 +44,11 @@
             </button>
           </li>
           <li class="header__actions-item">
-            <a class="header__actions-control" href="/">Account</a>
+            <a
+              class="header__actions-control header__actions-control--account"
+              href="/"
+              >Account</a
+            >
           </li>
           <li class="header__actions-item">
             <button class="header__actions-control" type="button">
@@ -46,38 +56,46 @@
             </button>
           </li>
         </ul>
+        <button class="header__burger-button burger-button" type="button">
+          <span class="burger-button__line"></span>
+          <span class="burger-button__line"></span>
+        </button>
       </div>
     </header>
-    <main class="main">
+    <main class="main container-fluid">
       <section class="account_page">
         <div class="account_menu_list">
-          <a href="#" class="account_menu_item active_account_menu_item"
+          <a href="./acc-overview.html" class="account_menu_item"
             ><p>Overview</p></a
           >
-          <a href="#" class="account_menu_item"><p>Orders</p></a>
-          <a href="#" class="account_menu_item"><p>Addresses</p></a>
+          <a href="./acc-orders.html" class="account_menu_item"
+            ><p>Orders</p></a
+          >
+          <a
+            href="./acc-adresses.html"
+            class="account_menu_item active_account_menu_item"
+            ><p>Addresses</p></a
+          >
           <a href="#" class="account_menu_item"><p>Logout</p></a>
         </div>
         <div class="account_menu_content">
           <div class="account_page_item">
             <div class="account_page_block">
-              <h2 class="title">Welcome, Sofi</h2>
-              <blockquote class="about-us__quote description">
-                <h4>Jouw plek voor zelfzorg.</h4>
-                <p>
-                  Hier kun je je bestellingen, bewaarde items en accountgegevens
-                  <br />
-                  bekijken. Al je voorkeuren — op één rustige, overzichtelijke
-                  plek.
-                </p>
-              </blockquote>
-            </div>
-            <div class="account_page_block">
-              <h3 class="subtitle">Laatste Bestellingen</h3>
-              <blockquote class="about-us__quote description">
-                <h4>Je hebt nog geen bestellingen geplaatst.</h4>
-              </blockquote>
-              <a class="account_btn button" href="/">Continue Shopping</a>
+              <h3 class="subtitle">Addresses</h3>
+              <div class="adresses_list">
+                <div class="description">
+                  <h4>Default Address..</h4>
+                  <p>
+                    Sofi Koenraad <br />
+                    ,Netherlands
+                  </p>
+                </div>
+                <div class="description">
+                  <h4>Other Addresses.</h4>
+              
+                </div>
+              </div>
+              <a class="account_btn button" href="/">Add New Address</a>
             </div>
           </div>
         </div>

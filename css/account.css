@@ -5,8 +5,10 @@
 
 .account_menu_list {
   border-right: var(--border);
-  min-height: 100vh;
+  min-height: calc(100vh - 66px);
+
   width: 14.05%;
+  max-width: 173px;
   padding: 80px 0 0 40px;
 }
 .account_menu_content {
@@ -23,6 +25,7 @@
   font-size: 18px;
   opacity: 0.6;
   margin-bottom: 14px;
+  transition: all 0.2s ease;
 }
 
 .active_account_menu_item p {
@@ -36,24 +39,96 @@
   border-bottom: var(--border);
 }
 
-.description h4 {
-  font-weight: 400;
-  margin-bottom: 10px;
-}
-
 .account_page_block .title,
 .account_page_block .subtitle {
   margin-bottom: 40px;
 }
 .account_page_item .account_page_block:last-child {
   border-bottom: none;
+  padding-bottom: 0;
 }
 
-.account_btn {
-  height: 44px;
-  font-size: 20px;
-  margin-top: 20px;
-  width: auto;
-  display: inline-block;
-  padding: 10px 80px;
+.adresses_list {
+  display: flex;
+  align-items: start;
+  gap: 300px;
+  margin-bottom: 120px;
+}
+
+@media (max-width: 1430px) {
+  .account_menu_list {
+    width: 153px;
+  }
+}
+@media (max-width: 1024px) {
+  .account_menu_list {
+    width: 141px;
+  }
+}
+
+@media (max-width: 767px) {
+  .account_page {
+    flex-direction: column;
+  }
+  .account_menu_list {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: none;
+    min-height: auto;
+    gap: 16px;
+    padding: 14px 20px;
+    border: none;
+    border-bottom: var(--border);
+  }
+  .account_menu_content {
+    width: 100%;
+  }
+  .account_menu_item p,
+  .account_menu_item {
+    margin: 0;
+  }
+  .account_menu_item p {
+    font-size: 10px;
+    line-height: 100%;
+  }
+  .account_page_block {
+    padding: 50px 20px;
+  }
+  .account_page_item {
+    padding-bottom: 50px;
+  }
+
+  .account_page_block .title,
+  .account_page_block .subtitle {
+    margin-bottom: 32px;
+  }
+  .account_page_block .subtitle {
+    font-size: 28px;
+  }
+  .account_btn {
+    height: auto;
+    font-size: 12px;
+    line-height: 120%;
+
+    padding: 6px 65px;
+  }
+
+  .adresses_list {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .description p,
+  .description h4 {
+    font-size: 12px;
+    line-height: 120%;
+  }
+  br  {
+    display: none;
+  }
+  .active_account_menu_item p {
+    padding-left: 4px;
+    border-left: 1px solid var(--color-charcoal-black)
+  }
 }

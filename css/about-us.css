@@ -1,0 +1,134 @@
+.about__us-block {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  border-bottom: var(--border);
+  gap: 30px;
+}
+.about__us {
+  padding-bottom: 120px;
+}
+.about-us__content {
+  max-width: 440px;
+  padding-top: 80px;
+  border-bottom: none;
+}
+
+.about-us__content::after {
+  display: none;
+}
+
+.title__block {
+  text-align: center;
+  padding: 40px;
+  border-bottom: var(--border);
+}
+
+.stand__for {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding-bottom: 80px;
+  border-bottom: var(--border);
+}
+.stand__for-item img {
+  width: 100%;
+}
+
+.stand__for-item__description {
+  padding: 40px;
+  padding-bottom: 0;
+}
+
+.title__block-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.title__block .description p {
+  text-align: left;
+}
+
+.image_block-btm img {
+  width: 100%;
+  height: 750px;
+  object-fit: cover;
+}
+
+.about__us-block .image_block {
+  width: 50%;
+}
+
+@media (max-width: 1024px) {
+  .title__block-flex {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .title__block-flex p {
+    text-align: center !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .about__us-block {
+    flex-direction: column;
+  }
+  .about-us__content {
+    max-width: none;
+  }
+  .about__us-block .image_block {
+    width: 100%;
+  }
+  .about-us__content {
+    padding-bottom: 0;
+    margin: 0;
+  }
+  br {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .stand__for {
+    display: flex;
+    flex-direction: column;
+  }
+  .about__us {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .about-us__content {
+    padding-top: 50px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .about-us__content br {
+    display: block;
+  }
+  .about__us-block .image_block img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+  }
+  .title__block {
+    padding: 30px 20px;
+  }
+  .our__mission {
+    padding-bottom: 70px;
+  }
+  .stand__for-item__description {
+    padding: 28px 20px;
+  }
+  .description p, .description h4 {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .title__block {
+    gap: 20px;
+  }
+  .image_block-btm img {
+    height: 700px;
+  }
+  .about__us {
+    padding-bottom: 70px;
+  }
+}

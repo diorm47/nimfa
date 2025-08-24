@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/product.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__inner container">
+        <a class="header__logo logo" href="/">
+          <img
+            class="logo__image"
+            src="./images/logo.svg"
+            width="92"
+            height="25"
+            alt=""
+          />
+        </a>
+        <nav class="header__menu" aria-label="Main Navigation">
+          <ul class="header__menu-list">
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="/">Shop all</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="/">About</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="/">Contacts</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="/">Blog</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="header__actions">
+          <li class="header__actions-item">
+            <button class="header__actions-control" type="button">
+              Search
+            </button>
+          </li>
+          <li class="header__actions-item">
+            <a
+              class="header__actions-control header__actions-control--account"
+              href="/"
+              >Account</a
+            >
+          </li>
+          <li class="header__actions-item">
+            <button class="header__actions-control" type="button">
+              Cart(0)
+            </button>
+          </li>
+        </ul>
+        <button class="header__burger-button burger-button" type="button">
+          <span class="burger-button__line"></span>
+          <span class="burger-button__line"></span>
+        </button>
+      </div>
+    </header>
+
+    <section class="product__header container-fluid">
+      <div class="product__swiper">
+        <!-- main swiper -->
+        <div class="swiper mainSwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./images/products/1.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="/images/products/2.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="/images/products/3.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="/images/products/4.png" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <!-- thumbnails -->
+        <div class="swiper swiper-thumbs">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./images/products/1.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="/images/products/2.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="/images/products/3.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="/images/products/4.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="product__item-descriptions">
+        <div class="product__descriptions">
+          <p class="product_descs-type description">Satisfyer</p>
+          <h2 class="product_descs-name subtitle">
+            Sweet Treat <br />
+            Spinnator Vibrator
+          </h2>
+          <div class="product_descs-color">
+            <div class="product_descs-color__name"></div>
+            <p>Pink</p>
+          </div>
+          <p class="product_descs-price">€59.99</p>
+          <div class="product_descs-text description">
+            <p>
+              Satisfyer Sweet Treat — sweet pleasure in the shape of ice cream.
+            </p>
+            <br />
+            <p>11 spinning modes for playful and tempting discoveries.</p>
+          </div>
+        </div>
+        <div class="product__actions">
+          <div class="product__counter">
+            <img src="./images/icons/decr.svg" alt="" />
+            <p class="description">1</p>
+            <img src="./images/icons/incr.svg" alt="" />
+          </div>
+          <a class="add__card-btn button" href="/">Add to cart - €59.99</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      const thumbsSwiper = new Swiper(".swiper-thumbs", {
+        spaceBetween: 10,
+        slidesPerView: 4,
+        freeMode: true,
+        watchSlidesProgress: true,
+      });
+
+      const mainSwiper = new Swiper(".mainSwiper", {
+        spaceBetween: 10,
+        thumbs: {
+          swiper: thumbsSwiper,
+        },
+      });
+    </script>
+  </body>
+</html>

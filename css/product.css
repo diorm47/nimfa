@@ -1,0 +1,234 @@
+.product__header {
+  display: flex;
+  align-self: start;
+  justify-content: space-between;
+  border-bottom: var(--border);
+}
+
+.product__swiper {
+  width: 50%;
+  position: relative;
+  padding: 20px 85px;
+  border-right: var(--border);
+}
+.product__item-descriptions {
+  width: 50%;
+  padding: 40px;
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+}
+.product__descriptions,
+.product__actions {
+  width: 100%;
+}
+
+.mainSwiper {
+  width: 100%;
+  max-width: 550px;
+  margin-bottom: 20px;
+}
+
+.mainSwiper .swiper-slide {
+  max-height: 630px;
+}
+.mainSwiper .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-thumbs .swiper-slide {
+  opacity: 0.5;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 1);
+  width: 60px !important;
+  height: 60px;
+}
+
+.swiper-thumbs .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.swiper-thumbs .swiper-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.swiper-thumbs .swiper-slide-thumb-active {
+  opacity: 1;
+}
+.swiper-thumbs img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.product_descs-name {
+  margin: 10px 0 20px;
+  font-size: 44px;
+}
+
+.product_descs-color {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 40px;
+}
+
+.product_descs-color__name {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: var(--border);
+  background: #c1967a;
+}
+
+.product_descs-color p {
+  color: var(--color-cherry-wine);
+  opacity: 0.6;
+
+  font-style: italic;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 25px;
+}
+
+.product_descs-price {
+  color: var(--color-cherry-wine);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 33px;
+  margin-bottom: 40px;
+}
+
+.product_descs-text {
+  width: 328px;
+}
+
+.product__actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 30px;
+}
+.product__counter {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  gap: 20px;
+  border: var(--border);
+  height: 44px;
+  min-width: 115px;
+}
+
+.product__counter img {
+  cursor: pointer;
+  height: 100%;
+  width: 12px;
+}
+.product__counter p {
+  color: var(--color-cherry-wine);
+}
+
+.add__card-btn {
+  height: 44px;
+  font-size: 20px;
+  font-weight: 400;
+  width: 79%;
+}
+
+@media (max-width: 1024px) {
+  .product__swiper {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .product__header {
+    flex-direction: column;
+  }
+  .product__swiper {
+    width: 100%;
+    border: none;
+    border-bottom: var(--border);
+  }
+  .mainSwiper .swiper-slide {
+    max-height: 260px;
+  }
+
+  .swiper-thumbs .swiper-slide {
+    height: 40px;
+    width: 40px !important;
+  }
+  .mainSwiper .swiper-slide img {
+    height: 260px;
+  }
+
+  .product__item-descriptions {
+    width: 100%;
+    padding: 20px;
+    padding-top: 28px;
+  }
+  .product__descriptions .description p {
+    font-size: 12px;
+  }
+  .product__descriptions br {
+    display: none;
+  }
+  .product_descs-name {
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 33px;
+    margin: 6px 0 10px;
+  }
+  .product_descs-color__name {
+    width: 12px;
+    height: 12px;
+  }
+  .product_descs-color p {
+    font-size: 10px;
+  }
+  .product_descs-color {
+    margin-bottom: 28px;
+  }
+  .product_descs-price {
+    font-size: 14px;
+    margin-bottom: 14px;
+    line-height: 19px;
+  }
+  .product_descs-text p {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 16px;
+    margin-bottom: 10px;
+  }
+  .product__actions {
+    margin-top: 70px;
+    gap: 10px;
+  }
+  .product__counter {
+    height: 26px;
+    padding: 6px 10px;
+    min-width: 70px;
+    gap: 14px;
+  }
+  .product__counter p {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+  }
+  .add__card-btn {
+    height: 26px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 120%;
+  }
+  .product_descs-text {
+    width: auto;
+  }
+}

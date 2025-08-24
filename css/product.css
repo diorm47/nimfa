@@ -344,6 +344,18 @@ input[type="number"] {
   display: none;
 }
 
+.faq__item-answer {
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transition: max-height 1s ease, opacity 0.3s ease;
+}
+
+.faq__item[open] .faq__item-answer {
+  max-height: 500px; /* больше, чем высота текста */
+  opacity: 1;
+}
+
 @media (max-width: 1024px) {
   .product__block-template__descs {
     padding-right: 40px;

@@ -58,6 +58,12 @@
 .checkbox-item_selected {
   background: var(--color-cherry-wine);
 }
+.checkbox-item__input:checked + .checkbox-item__area {
+  background: var(--color-cherry-wine);
+}
+.checkbox-item__input {
+  display: none; 
+}
 
 @media (max-width: 1024px) {
   .login_form {

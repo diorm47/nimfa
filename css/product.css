@@ -119,7 +119,7 @@
   align-items: center;
   padding: 10px 20px;
   gap: 5px;
-  border: var(--border);
+  border: 1px solid var(--color-cherry-wine);
   height: 44px;
   min-width: 115px;
 }
@@ -319,6 +319,16 @@ input[type="number"] {
   transform: translateY(-50%) rotate(0deg);
 }
 
+.faq__item-answer {
+  display: grid;
+  transition-duration: 0.3s;
+  grid-template-rows: 0fr;
+}
+
+.faq__item[open] + .faq__item-answer {
+  grid-template-rows: 1fr;
+}
+
 .faq__item-answer p span {
   font-weight: 400;
 }
@@ -327,7 +337,14 @@ input[type="number"] {
   border-bottom: none;
 }
 
+.reviews__title .product__block-template__title {
+  display: none;
+}
+
 @media (max-width: 1024px) {
+  .product__block-template__descs {
+    padding-right: 40px;
+  }
   .product__swiper {
     padding: 20px;
   }
@@ -432,5 +449,118 @@ input[type="number"] {
   .swiper-thumbs {
     width: 100%;
     overflow: hidden;
+  }
+
+  .product__block-template {
+    flex-direction: column;
+  }
+  .product__block-template__title {
+    width: 100%;
+    padding: 20px;
+    border-bottom: var(--border);
+  }
+  .product__block-template__descs {
+    border: none;
+    padding: 50px 20px;
+  }
+  .faq__block {
+    flex-direction: column;
+    padding: 50px 0 70px;
+  }
+  .faq__block .subtitle {
+    padding-left: 20px;
+  }
+  .faq__list .faq__item:last-child {
+    border-bottom: var(--border);
+  }
+  .faq__list {
+    max-width: 100%;
+  }
+  .faq__item {
+    padding-right: 20px;
+  }
+  .details__list p {
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 10px;
+  }
+  .image__text {
+    margin-bottom: 50px !important;
+  }
+  .faq__block {
+    padding-top: 20px;
+  }
+  .faq__list {
+    padding-top: 50px;
+  }
+  .faq__item summary {
+    font-size: 12px;
+  }
+  .faq__item {
+    padding: 10px 20px;
+    margin: 0;
+  }
+  .faq__item-answer p {
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 6px;
+  }
+  .faq__item-icon {
+    width: 14px;
+    height: 14px;
+  }
+  .faq__item-answer {
+    padding-top: 10px;
+  }
+  .reviews__title {
+    flex-direction: column;
+    align-items: start;
+    padding: 20px;
+    gap: 10px;
+  }
+  .reviews__list {
+    padding: 35px 0 40px;
+  }
+  .review__item {
+    padding: 0 20px 14px;
+    margin-bottom: 14px;
+  }
+  .review__item-title {
+    margin-bottom: 20px;
+  }
+  .review__item-title p {
+    font-size: 14px;
+  }
+  .review__item .description {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .review__item-stars {
+    margin-bottom: 10px;
+  }
+  .review__item-stars img {
+    width: 14px;
+  }
+  .link-line {
+    margin-left: 20px;
+    font-size: 12px;
+  }
+  .reviews__block .product__block-template__title {
+    display: none;
+  }
+
+  .reviews__title .product__block-template__title {
+    display: block;
+    border-bottom: 0;
+    padding: 0;
+    margin-bottom: 18px;
+  }
+  .reviews__title .product__block-template__title p {
+    font-size: 12px;
+  }
+  .reviews__btn {
+    padding: 6px 40px;
+    height: 26px;
+    font-size: 12px;
   }
 }

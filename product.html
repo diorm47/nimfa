@@ -210,12 +210,12 @@
           pleasure than ever before
         </h2>
         <div class="faq__list">
-          <details class="faq__item">
+          <details class="faq__item" name="faq__item">
             <summary>
-              Specifications
+              <span role="term" aria-details="faq-1"> Specifications</span>
               <div class="faq__item-icon"></div>
             </summary>
-            <div class="faq__item-answer">
+            <div class="faq__item-answer" id="faq-1" role="definition">
               <p><span>Material:</span> Medical-grade silicone</p>
               <p><span>Weight:</span> 248 g</p>
               <p><span>Stimulation type:</span> Rotation</p>
@@ -232,12 +232,13 @@
               <p><span>Warranty:</span> Yes</p>
             </div>
           </details>
-          <details class="faq__item">
+
+          <details class="faq__item" name="faq__item">
             <summary>
-              How to use
+              <span role="term" aria-details="faq-2"> How to use</span>
               <div class="faq__item-icon"></div>
             </summary>
-            <div class="faq__item-answer">
+            <div class="faq__item-answer" id="faq-2" role="definition">
               <p>Fully charge before first use ( USB cable included ).</p>
               <p>
                 Apply a bit of water-based lubricant for an even gentler
@@ -255,12 +256,12 @@
               </p>
             </div>
           </details>
-          <details class="faq__item">
+          <details class="faq__item" name="faq__item">
             <summary>
-              Who it’s for
+              <span role="term" aria-details="faq-3"> Who it’s for</span>
               <div class="faq__item-icon"></div>
             </summary>
-            <div class="faq__item-answer">
+            <div class="faq__item-answer" id="faq-3" role="definition">
               <p>For women who love to play and explore new sensations.</p>
               <p>
                 Perfect for beginners thanks to simple controls and lightweight
@@ -272,12 +273,12 @@
               </p>
             </div>
           </details>
-          <details class="faq__item">
+          <details class="faq__item" name="faq__item">
             <summary>
-              Materials
+              <span role="term" aria-details="faq-4"> Materials</span>
               <div class="faq__item-icon"></div>
             </summary>
-            <div class="faq__item-answer">
+            <div class="faq__item-answer" id="faq-4" role="definition">
               <p>Medical-grade silicone</p>
               <p>Hypoallergenic and body-safe</p>
             </div>
@@ -288,6 +289,9 @@
       <section class="reviews__block container-fluid">
         <div class="reviews__title">
           <h2 class="subtitle">Reviews</h2>
+          <div class="product__block-template__title">
+            <p class="description">22 reviews</p>
+          </div>
           <a class="reviews__btn button" href="/">Write a review</a>
         </div>
 
@@ -295,8 +299,8 @@
           <div class="product__block-template__title">
             <p class="description">22 reviews</p>
           </div>
-          <div class="product__block-template__descs">
-            <div class="reviews__list descs__container">
+          <div class="product__block-template__descs reviews__list">
+            <div class="descs__container">
               <div class="review__item">
                 <div class="review__item-title">
                   <p class="description">Britney N.</p>

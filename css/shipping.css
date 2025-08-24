@@ -23,7 +23,6 @@
 }
 
 .info__page p {
-
   color: var(--color-charcoal-black);
 
   font-size: 20px;
@@ -89,6 +88,10 @@
   margin-bottom: 10px;
 }
 
+.editor__content h5 {
+  margin-top: 30px;
+}
+
 @media (max-width: 1024px) {
   .info__page {
     padding-left: 20px;
@@ -117,6 +120,10 @@
 }
 
 @media (max-width: 480px) {
+  .editor__content h5 {
+    margin-top: 14px;
+  }
+
   .container__l,
   .faq__page {
     padding-top: 50px;

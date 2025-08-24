@@ -5,6 +5,14 @@
   border-bottom: var(--border);
   gap: 30px;
 }
+.about__us-block .image_block  {
+  border-left: var(--border);
+}
+
+.our__mission .image_block  {
+  border-left:none;
+  border-right: var(--border);
+}
 .about__us {
   padding-bottom: 120px;
 }

@@ -76,7 +76,6 @@
   display: flex;
   align-items: center;
   gap: 4px;
-  margin-bottom: 40px;
 }
 
 .product_descs-color__name {
@@ -84,7 +83,6 @@
   height: 25px;
   border-radius: 50%;
   border: var(--border);
-  background: #c1967a;
 }
 
 .product_descs-color p {
@@ -120,19 +118,48 @@
   display: flex;
   align-items: center;
   padding: 10px 20px;
-  gap: 20px;
+  gap: 5px;
   border: var(--border);
   height: 44px;
   min-width: 115px;
 }
 
-.product__counter img {
+.product__counter button {
   cursor: pointer;
   height: 100%;
   width: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.product__counter p {
+.product__counter button img {
+  width: 100%;
+}
+
+.product__counter input {
   color: var(--color-cherry-wine);
+  background: transparent;
+  border: none;
+  width: 30px;
+  height: 24px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  font-size: 20px;
+  font-weight: 400;
+
+  outline: none;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
 }
 
 .add__card-btn {
@@ -140,6 +167,12 @@
   font-size: 20px;
   font-weight: 400;
   width: 79%;
+}
+.product_descs-colors {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 40px;
 }
 
 @media (max-width: 1024px) {
@@ -193,12 +226,14 @@
   .product_descs-color p {
     font-size: 10px;
   }
-  .product_descs-color {
+
+  .product_descs-colors {
     margin-bottom: 28px;
+    gap: 10px;
   }
   .product_descs-price {
     font-size: 14px;
-    margin-bottom: 14px;
+    margin-bottom: 28px;
     line-height: 19px;
   }
   .product_descs-text p {
@@ -215,7 +250,7 @@
     height: 26px;
     padding: 6px 10px;
     min-width: 70px;
-    gap: 14px;
+    gap: 5px;
   }
   .product__counter p {
     font-size: 12px;
@@ -230,5 +265,20 @@
   }
   .product_descs-text {
     width: auto;
+  }
+  .product_descs-type {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .product__counter button {
+    width: 8px;
+  }
+  .product__counter input {
+    font-size: 12px;
+    width: 20px;
+  }
+  .swiper-thumbs {
+    width: 100%;
+    overflow: hidden;
   }
 }

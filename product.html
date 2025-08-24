@@ -78,6 +78,15 @@
               <img src="/images/products/2.png" alt="" />
             </div>
             <div class="swiper-slide">
+              <img src="/images/products/5.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="/images/products/6.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="/images/products/7.png" alt="" />
+            </div>
+            <div class="swiper-slide">
               <img src="/images/products/3.png" alt="" />
             </div>
             <div class="swiper-slide">
@@ -96,6 +105,15 @@
               <img src="/images/products/2.png" alt="" />
             </div>
             <div class="swiper-slide">
+              <img src="/images/products/5.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="/images/products/6.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="/images/products/7.png" alt="" />
+            </div>
+            <div class="swiper-slide">
               <img src="/images/products/3.png" alt="" />
             </div>
             <div class="swiper-slide">
@@ -111,10 +129,16 @@
             Sweet Treat <br />
             Spinnator Vibrator
           </h2>
-          <div class="product_descs-color">
-            <div class="product_descs-color__name"></div>
-            <p>Pink</p>
+          <div class="product_descs-colors">
+            <button class="product_descs-color">
+              <div
+                class="product_descs-color__name"
+                style="background: #c1967a"
+              ></div>
+              <p>Pink</p>
+            </button>
           </div>
+
           <p class="product_descs-price">€59.99</p>
           <div class="product_descs-text description">
             <p>
@@ -126,9 +150,9 @@
         </div>
         <div class="product__actions">
           <div class="product__counter">
-            <img src="./images/icons/decr.svg" alt="" />
-            <p class="description">1</p>
-            <img src="./images/icons/incr.svg" alt="" />
+            <button><img src="./images/icons/decr.svg" alt="" /></button>
+            <input type="number" name="" id="" value="1" />
+            <button><img src="./images/icons/incr.svg" alt="" /></button>
           </div>
           <a class="add__card-btn button" href="/">Add to cart - €59.99</a>
         </div>
@@ -143,6 +167,11 @@
         slidesPerView: 4,
         freeMode: true,
         watchSlidesProgress: true,
+        breakpoints: {
+          320: { slidesPerView: 3, spaceBetween: 6 },
+          768: { slidesPerView: 4, spaceBetween: 10 },
+          1024: { slidesPerView: 7 },
+        },
       });
 
       const mainSwiper = new Swiper(".mainSwiper", {

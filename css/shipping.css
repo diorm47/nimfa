@@ -23,13 +23,22 @@
 }
 
 .info__page p {
-  margin-bottom: 30px;
+
   color: var(--color-charcoal-black);
 
   font-size: 20px;
   font-weight: 300;
   line-height: 27px;
+}
+.info__page div p:last-child {
+  margin-bottom: 0;
+}
 
+.info__page p {
+  margin-bottom: 20px;
+}
+.info__page div {
+  margin-bottom: 30px;
 }
 
 .faq__page {
@@ -108,7 +117,8 @@
 }
 
 @media (max-width: 480px) {
-  .container__l, .faq__page {
+  .container__l,
+  .faq__page {
     padding-top: 50px;
     padding-bottom: 70px;
   }
@@ -136,5 +146,8 @@
   }
   .info__page p {
     margin-bottom: 20px;
+  }
+  .info__page div {
+    margin-bottom: 14px;
   }
 }

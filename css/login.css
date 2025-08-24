@@ -46,6 +46,18 @@
 .login_form-wrapper .description {
   margin-bottom: 40px;
 }
+.checkbox-item {
+  cursor: pointer;
+}
+.checkbox-item__area {
+  width: 14px;
+  height: 14px;
+
+  border: var(--border);
+}
+.checkbox-item_selected {
+  background: var(--color-cherry-wine);
+}
 
 @media (max-width: 1024px) {
   .login_form {

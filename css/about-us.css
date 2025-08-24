@@ -23,6 +23,10 @@
   text-align: center;
   padding: 40px;
   border-bottom: var(--border);
+  font-size: 44px;
+}
+.description  p{
+  line-height: 27px;
 }
 
 .stand__for {
@@ -62,6 +66,12 @@
 .title__block-mobile__btm {
   display: none;
 }
+.about-us__title {
+  font-size: 64px;
+}
+.about-us__content {
+  row-gap: 80px;
+}
 
 @media (max-width: 1024px) {
   .title__block-flex {
@@ -76,6 +86,7 @@
 @media (max-width: 767px) {
   .about__us-block {
     flex-direction: column;
+    gap: 70px;
   }
   .about-us__content {
     max-width: none;
@@ -94,6 +105,12 @@
 }
 
 @media (max-width: 480px) {
+  .our__mission .about-us__content{
+   padding-top: 0;
+  }
+  .subtitle {
+    font-size: 28px;
+  }
   .stand__for {
     display: flex;
     flex-direction: column;

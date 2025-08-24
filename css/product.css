@@ -117,6 +117,7 @@
 .product__counter {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding: 10px 20px;
   gap: 5px;
   border: 1px solid var(--color-cherry-wine);
@@ -205,6 +206,7 @@ input[type="number"] {
 .image__text {
   font-weight: 400;
   color: rgba(94, 3, 3, 1);
+  margin-bottom: 80px !important;
 }
 
 .faq__block {
@@ -335,6 +337,7 @@ input[type="number"] {
 
 .faq__list .faq__item:last-child {
   border-bottom: none;
+  margin-bottom: 0;
 }
 
 .reviews__title .product__block-template__title {
@@ -506,8 +509,8 @@ input[type="number"] {
     margin-bottom: 6px;
   }
   .faq__item-icon {
-    width: 14px;
-    height: 14px;
+    width: 8px;
+    height: 8px;
   }
   .faq__item-answer {
     padding-top: 10px;
